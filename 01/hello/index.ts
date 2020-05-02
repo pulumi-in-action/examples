@@ -9,8 +9,15 @@ const bucket = new aws.s3.Bucket("hello-world", {
 const homepage = new aws.s3.BucketObject("index.html", {
     bucket: bucket,
     acl: aws.s3.PublicReadAcl,
-    content: "<html>Hello, world.</html>",
+    content: `
+        <html>
+            <head>
+                <title>A first Pulumi website</title>
+            </head>
+            <body>Hello, world.</body>
+        </html>
+    `,
     contentType: "text/html"
 });
 
-export const url = bucket.websiteEndpoint;
+export const url = bucket.websiteEndpoint.apply(endpoint => `http://${endpoint}`);

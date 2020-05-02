@@ -1,11 +1,10 @@
 {
-    "name": "hello",
+    "name": "01-hello",
     "devDependencies": {
         "@types/node": "^8.0.0"
     },
     "dependencies": {
         "@pulumi/pulumi": "^1.0.0",
-        "@pulumi/aws": "^1.0.0",
-        "@pulumi/awsx": "^0.18.10"
+        "@pulumi/aws": "^1.0.0"
     }
 }
