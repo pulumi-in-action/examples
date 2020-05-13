@@ -1,5 +1,7 @@
 # Pulumi in Action Examples
 
+![Build](https://github.com/pulumi-in-action/examples/workflows/Build/badge.svg)
+
 ## Welcome! 
 
 Here you'll find all of the code snippets and examples from _Pulumi in Action_, organized by chapter.
