@@ -1,6 +1,2 @@
 config:
   aws:region: us-west-2
-  cloud-notifier:kid_names: '["Oliver", "Sam", "Rosemary"]'
-  cloud-notifier:phone_number:
-    secure: AAABAIqHJxQnQ/PGqbBxgCXc5o9YAclhHGDuNJwgLnMED74iPF1OnxPfkGs=
-  cloud-notifier:schedule_expression: rate(1 minute)
