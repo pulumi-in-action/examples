@@ -2,6 +2,8 @@
 
 ![Build](https://github.com/pulumi-in-action/examples/workflows/Build/badge.svg)
 
+:point_up: If this is green, it means that all of the examples in this repo are working as written. 
+
 ## Welcome! 
 
 Here you'll find all of the code snippets and examples from _Pulumi in Action_, organized by chapter.
