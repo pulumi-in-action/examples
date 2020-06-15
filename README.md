@@ -6,7 +6,7 @@
 
 ## Welcome! 
 
-Here you'll find all of the code snippets and examples from _Pulumi in Action_, organized by chapter.
+Here you'll find all of the code snippets and examples from [_Pulumi in Action_](https://livebook.manning.com/book/pulumi-in-action/), organized by chapter.
 
 The book is still a work in progress, so expect changes over the next several months.
 
