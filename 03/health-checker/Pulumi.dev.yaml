@@ -1,0 +1,6 @@
+config:
+  aws:region: us-west-2
+  health-checker:check_interval: rate(1 minute)
+  health-checker:site_url: https://pulumi-in-action.info/ex/03/health-checker/api/dev
+  health-checker:webhook_url:
+    secure: AAABAGB91Dicws+puNhH7keS8wyJ7U27CrGemjKZcQpxLVGKTcPRNgQIWG3RhxPF5nkNpsp0q/DgvkjujEIXin0daYFGfHLrwvosUZ9tVhuGtcPwGNC2iJBHR53zZCDZXtHImmq8JgPhKORFcrxtsLQ=
