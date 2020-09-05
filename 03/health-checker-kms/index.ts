@@ -6,13 +6,14 @@ import got from "got";
 const config = new pulumi.Config();
 const checkInterval = config.require("check_interval");
 const siteURL = config.require("site_url");
-const webhookURL = config.requireSecret("webhook_url");
+const slackWebhookURL = config.requireSecret("slack_webhook_url");
+const slackChannel = config.require("slack_channel");
 
 // Create a new KMS key for use with this application.
 const key = new aws.kms.Key("key");
 const cipherText = new aws.kms.Ciphertext("ciphertext", {
     keyId: key.arn,
-    plaintext: webhookURL,
+    plaintext: slackWebhookURL,
 });
 
 const callback = new aws.lambda.CallbackFunction("callback", {
@@ -47,11 +48,12 @@ const callback = new aws.lambda.CallbackFunction("callback", {
                     json: {
                         username: "health-check",
                         icon_emoji: ":scream:",
-                        text: `${siteURL} responded with HTTP ${status} (${message}).`
+                        channel: slackChannel,
+                        text: `${siteURL} responded with HTTP ${status} (${message}).`,
                     }
                 });
             } catch (error) {
-                console.error(error);
+                console.error(`Error posting to Slack: ${error}`);
             }
         }
     },
