@@ -7,3 +7,5 @@ Instead, I've chosen to publish the book on my own, as [_The Pulumi Book_](https
 Thanks for your interest and continued support!
 
 🚀 https://thepulumibook.com
+
+🧑🏻‍💻 https://github.com/thepulumibook/examples
