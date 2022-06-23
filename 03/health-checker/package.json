@@ -7,6 +7,6 @@
         "@pulumi/aws": "^2.0.0",
         "@pulumi/awsx": "^0.20.0",
         "@pulumi/pulumi": "^2.0.0",
-        "got": "^11.5.2"
+        "got": "^11.8.5"
     }
 }
